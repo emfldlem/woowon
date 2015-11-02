@@ -2529,7 +2529,7 @@ output {
 }
 .form-control {
   display: block;
-  width: 100%;
+  width: 300px;
   height: 34px;
   padding: 6px 12px;
   font-size: 14px;
@@ -3344,7 +3344,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-block {
   display: block;
-  width: 100%;
+  width: 300px;
 }
 .btn-block + .btn-block {
   margin-top: 5px;
@@ -6562,5 +6562,14 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+
+.index_container {
+  margin-left: 35%;
+  margin-top: 20%;
+}
+
+.btn-join{
+  margin-left: 33.5%;
 }
 /*# sourceMappingURL=bootstrap.css.map */

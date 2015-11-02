@@ -1,57 +1,50 @@
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="ko">
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-
     <title>Woowon 판매재고</title>
-
-	<!-- 합쳐지고 최소화된 최신 CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-	<!-- 부가적인 테마 -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-
-	<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+</head>
 
-  <body>
-
+<body>
     <div class="container">
-    	<div class="log-image">
-    		<h2 class="form-signin-heading">WooWon 판매재고</h2>
-    	</div>
-      <form class="form-signin">
-
-        <label for="inputid" class="sr-only">ID</label>
-        <input type="id" id="inputid" class="form-control" placeholder="ID" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
+        <div class="index_container">
+            <div class="row">
+                <h2 class="form-signin-heading">WooWon 판매재고</h2>
+                <a class="btn btn-default btn-join" href="join.html" role="button">Join</a>
+            </div>
+            <form class="form-signin">
+                <label for="inputemail" class="sr-only">이메일</label>
+                <input type="email" id="inputid" class="form-control" placeholder="ID" required autofocus>
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <button class="btn btn-primary btn-block" type="submit">Login</button>
+            </form>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-      </form>
+    </div>
+    <!-- /container -->
+</body>
 
-    </div> <!-- /container -->
-
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
 </html>
