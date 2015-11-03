@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>거래처 등록</title>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/woowon.css" rel="stylesheet">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="main.html">WooWon 판매재고</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="Customer.html">거래처 관리</a></li>
+                    <li><a href="Product.html">제품 관리</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">매출/매입 관리 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="Trade_out.html">매출</a></li>
+                            <li><a href="Trade_in.html">매입</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">통합 주문 관리 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">거래처 별 주문관리</a></li>
+                            <li><a href="#">기간 별 주문관리</a></li>
+                            <li><a href="#">주문 관리</a></li>
+                            <li><a href="#">견적 관리</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">환경 설정 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">사업자 설정</a></li>
+                            <li><a href="#">사용자 설정</a></li>
+                        </ul>
+                    </li>
+                    <!--<li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>-->
+                </ul>
+                </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class="container">
+        <div class="starter-template">
+            <h2>거래처 등록</h2>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="InputCustomerName" class="col-sm-2 control-label">거래처 명</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="InputCustomerName" placeholder="거래처 명을 입력하세요.">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="InputCustomerNo" class="col-sm-2 control-label">사업자 NO</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="InputCustomerNo" placeholder="사업자 NO를 입력하세요.">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="InputCustomerrepresentative" class="col-sm-2 control-label">대표자 명</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="InputCustomerrepresentative" placeholder="대표자 명을 입력하세요.">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="InputCustomerTel" class="col-sm-2 control-label">대표번호</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="InputCustomerTel" placeholder="000-000-0000">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="InputCustomerPhone" class="col-sm-2 control-label">휴대전화</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="InputCustomerPhone" placeholder="000-0000-0000">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="InputCustomerFax" class="col-sm-2 control-label">FAX</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="InputCustomerFax" placeholder="000-000-0000">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="InputCustomerHomepage" class="col-sm-2 control-label">홈페이지</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="InputCustomerHomepage" placeholder="homepage.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="InputCustomerAdress" class="col-sm-2 control-label">대표주소</label>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="InputCustomerAdress" placeholder="대표 주소를 입력하세요."></div>
+                        <div class="col-sm-5"><button type="button" class="btn btn-primary">찾기</button></div>
+                            <input type="text" class="form-control" id="InputCustomerAdress" placeholder="상세주소를 입력하세요">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <button type="button" class="btn btn-primary">등록</button>
+        </div>
+    </div>
+
+
+    <!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap-3.3.2-dist/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>
