@@ -1,7 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,16 +9,23 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-    <title>제품관리</title>
+
+    <title>제품 등록</title>
+
     <!-- 합쳐지고 최소화된 최신 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
     <!-- 부가적인 테마 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
     <!-- Custom styles for this template -->
     <link href="css/woowon.css" rel="stylesheet">
-</head>
 
-<body>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -57,65 +64,72 @@
                             <li><a href="#">사용자 설정</a></li>
                         </ul>
                     </li>
+                    <!--<li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>-->
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">로그아웃</a></li>
+                </li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
         </div>
     </nav>
-    <div class="container starter-template">
-        <h2>제품 관리</h2>
-        <p class="text-right"><a href="Product_add.html"><u>제품 등록</u></a></p>
-        <table class="table table-bordered">
-            <tr bgcolor="#dedddd">
-                <td>No.</td>
-                <td>제품(명)</td>
-                <td>제품분류</td>
-                <td>규격</td>
-                <td>단위</td>
-                <td>가격</td>
-                <td>등록날짜</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-            </tr>
-            <!-- 이 밑은 angular js를 이용하여 데이터가 있는 만큼 출력 -->
-        </table>
-        <nav>
-            <ul class="pagination">
-                <li>
-                    <a href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>
-                    <a href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <div class="container">
+        <div class="starter-template">
+            <h2>거래처 등록</h2>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="InputProductName" class="col-sm-2 control-label">제품 명</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="InputProductName" placeholder="제품 명을 입력하세요.">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="InputProductrNo" class="col-sm-2 control-label">제품구분</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="InputProductNo" placeholder="제품구분을 입력하세요.">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="InputProductStandard" class="col-sm-2 control-label">규격</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="InputProductStandard" placeholder="규격을 입력하세요.">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="InputProductUnit" class="col-sm-2 control-label">단위</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="InputProductUnit" placeholder="0000">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="InputProductPrice" class="col-sm-2 control-label">가격</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="InputProductPrice" placeholder="0000">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="InputCustomerFax" class="col-sm-2 control-label">등록날짜</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="InputCustomerFax" placeholder="여긴 날짜 API를 넣어보자.">
+                    </div>
+                </div>
+            </form>
+            <button type="button" class="btn btn-primary">등록</button>
+        </div>
     </div>
+
+
     <!-- /.container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap-3.3.2-dist/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 
 </html>

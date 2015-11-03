@@ -68,12 +68,10 @@
                 </li>
                 </ul>
             </div>
-           
         </div>
     </nav>
-     <!--/.nav-collapse -->
-        <div class="container">
-        <div class="starter-template">
+    <!--/.nav-collapse -->
+    <div class="container starter-template">
             <h2>매입 관리</h2>
             <form class="navbar-form navbar-left">
                 <p>거래처 검색</p>
@@ -92,13 +90,27 @@
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td><input type="text" size="20" id="InputProductNo"></td>
-                    <td><input type="text" size="10"></td>
-                    <td><input type="text" size="10"></td>
-                    <td><input type="text" size="8"></td>
-                    <td><input type="text" size="10"></td>
-                    <td><input type="text" size="10"></td>
-                    <td><input type="text" size="10"></td>
+                    <td>
+                        <input type="text" size="20" id="InputProductNo">
+                    </td>
+                    <td>
+                        <input type="text" size="10">
+                    </td>
+                    <td>
+                        <input type="text" size="10">
+                    </td>
+                    <td>
+                        <input type="text" size="8">
+                    </td>
+                    <td>
+                        <input type="text" size="10">
+                    </td>
+                    <td>
+                        <input type="text" size="10">
+                    </td>
+                    <td>
+                        <input type="text" size="10">
+                    </td>
                 </tr>
                 <!-- 이 밑은 angular js를 이용하여 데이터가 있는 만큼 출력 -->
             </table>
@@ -121,54 +133,43 @@
                     </li>
                 </ul>
             </nav>
-        </div>
-        <table class="table table-bordered">
-                <tr bgcolor="#dedddd">
-                    <td>공급가액</td>
-                    <td>000000</td>
-                    <td>지급액</td>
-                    <td><input type="text" >
-                        <select>
-                            <option value="cash">현금</option>
-                            <option value="bank">은행</option>
-                            <option value="bill">어음</option>
-                            <option value="card">카드</option>
-                            <option value="etc">기타</option>
-                        </select></td>
-                    
-                    <td>전일잔액</td>
-                    <td colspan="2">0000000</td>
-                </tr>
-                 <tr bgcolor="#dedddd">
-                    <td>부가세 <select>
-                            <option value="">별도</option>
-                            <option value="">청구</option>
-                        </select></td>
-
-                    <td>0000000</td>
-                    <td>할인액</td>
-                    <td><input type="text" size="10"></td>
-                    <td>금일잔액</td>
-                    <td>0000000</td>
-                    <td></td>
-                </tr>
-                  <tr bgcolor="#dedddd">
-                    <td>합계금액</td>
-                    <td>0000000</td>
-                    <td>적요</td>
-                    <td colspan="3"><input type="text" size="50"></td>
-                    <td></td>
-
-                </tr>
-            </table>
-            <ul class="list-group">
-                <li class="list-group-item"><span>방송일: </span>{{ program.datetime | date:"EEEE" }}<span>일시: </span>{{ program.datetime | date:"yyyy년 MM월 dd일" }}</li>
-                <li class="list-group-item"></li>
-                <li class="list-group-item"><span>시간대: </span> {{ program.datetime | date:"HH시 mm분" }}</li>
-                <li class="list-group-item"><span>시즌:</span>{{ program.season }} </li>
-                <li class="list-group-item"><span>장르:</span>{{ program.genre }} </li>
-            </ul>
-
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="list-group text-left">
+                        <li class="list-group-item"><span>공급가액 :</span>0000000</li>
+                        <li class="list-group-item"><span>부가세</span>
+                            <select>
+                                <option value="">별도</option>
+                                <option value="">청구</option>
+                            </select>
+                            <span> :</span>000000</li>
+                        <li class="list-group-item"><span>합계 금액 : </span> 000000</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-group text-left">
+                        <li class="list-group-item"><span>지급액 :</span>
+                            <input type="number">
+                            <select>
+                                <option value="cash">현금</option>
+                                <option value="bank">은행</option>
+                                <option value="bill">어음</option>
+                                <option value="card">카드</option>
+                                <option value="etc">기타</option>
+                            </select>
+                        </li>
+                        <li class="list-group-item"><span>할인액 : </span>
+                            <input type="number">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-group text-left">
+                        <li class="list-group-item"><span>전일잔액 :</span>000000</li>
+                        <li class="list-group-item"><span>금일잔액 :</span>000000</li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <!-- /.container -->
         <!-- Bootstrap core JavaScript
