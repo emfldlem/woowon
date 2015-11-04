@@ -89,3 +89,7 @@ img {
   list-style:none;
   padding-left:0px;  
 }
+
+.color-red {
+  border: 1px solid red;
+}

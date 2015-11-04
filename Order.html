@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>주문서</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/woowon.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="main.html">WooWon 판매재고</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Customer.html">거래처 관리</a></li>
+                    <li><a href="Product.html">제품 관리</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">매출/매입 관리 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="Trade_out.html">매출</a></li>
+                            <li><a href="Trade_in.html">매입</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">주문/견적 관리 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="Order.html">주문 관리</a></li>
+                            <li><a href="estimate.html">견적 관리</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">환경 설정 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="Owner_setting.html">사업자 설정</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">로그아웃</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container starter-template well">
+        <h2>주문서</h2>
+        <div class="row">
+            <div class="col-md-3 pull-right">
+                <ul class="list-group text-left">
+                    <li class="list-group-item"><span>주문서번호 :</span>0000000</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row" style="padding-bottom: 10px">
+            <div class="col-md-3 color-red">
+                <input type="text" class="form-control" placeholder="거래처 검색">
+            </div>
+            <div class="col-md-9">
+                <input type="text" class="form-control" placeholder="주문서 제목">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-bordered">
+                    <tr bgcolor="#dedddd">
+                        <td>No.</td>
+                        <td>제품(명)</td>
+                        <td>규 격</td>
+                        <td>단 위</td>
+                        <td>수 량</td>
+                        <td>단 가</td>
+                        <td>금 액</td>
+                        <td>비 고</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <input type="text" class="form-control" id="InputProductNo">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" >
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" >
+                        </td>
+                        <td>
+                            <input type="text" class="form-control">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" >
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" >
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" >
+                        </td>
+                    </tr>
+                    <!-- 이 밑은 angular js를 이용하여 데이터가 있는 만큼 출력 -->
+                </table>
+                <nav>
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="list-group text-left">
+                    <li class="list-group-item"><span>공급가액 :</span>0000000</li>
+                    <li class="list-group-item"><span>부가세</span>
+                        <select>
+                            <option value="">별도</option>
+                            <option value="">청구</option>
+                        </select>
+                        <span> :</span>000000</li>
+                    <li class="list-group-item"><span>합계 금액 : </span> 000000</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-group text-left">
+                    <li class="list-group-item" style="padding-bottom: 0px;padding-top: 0px"><span><input type="date" class="form-control" id="exampleInputName2"><input type="date" class="form-control" id="exampleInputName2"></span>
+                        <li class="list-group-item"><span>담당자 : </span>
+                            <input type="text" class="form-control" id="exampleInputName2">
+                        </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-group text-left">
+                    <li class="list-group-item"><span>발송방법 :</span>000000</li>
+                    <li class="list-group-item"><span>납기 :</span>000000</li>
+                    <li class="list-group-item"><span>결제조건 :</span>000000</li>
+                    <li class="list-group-item"><span>비고 : </span>
+                            <input type="text" class="form-control" id="exampleInputName2">
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
