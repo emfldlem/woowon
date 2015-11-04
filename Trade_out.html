@@ -66,111 +66,118 @@
     </nav>
     <div class="container starter-template">
         <h2>매출 관리</h2>
-        <form class="navbar-form navbar-left">
-            <p>거래처 검색</p>
-            <input type="text" class="form-control" placeholder="Search...">
-        </form>
-        <table class="table table-bordered">
-            <tr bgcolor="#dedddd">
-                <td>No.</td>
-                <td>제품(명)</td>
-                <td>규 격</td>
-                <td>단 위</td>
-                <td>수 량</td>
-                <td>단 가</td>
-                <td>금 액</td>
-                <td>비 고</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>
-                    <input type="text" size="20" id="InputProductNo">
-                </td>
-                <td>
-                    <input type="text" size="10">
-                </td>
-                <td>
-                    <input type="text" size="10">
-                </td>
-                <td>
-                    <input type="text" size="8">
-                </td>
-                <td>
-                    <input type="text" size="10">
-                </td>
-                <td>
-                    <input type="text" size="10">
-                </td>
-                <td>
-                    <input type="text" size="10">
-                </td>
-            </tr>
-            <!-- 이 밑은 angular js를 이용하여 데이터가 있는 만큼 출력 -->
-        </table>
-        <nav>
-            <ul class="pagination">
-                <li>
-                    <a href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>
-                    <a href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
         <div class="row">
-            <div class="col-md-3">
-                <ul class="list-group text-left">
-                    <li class="list-group-item"><span>공급가액 :</span>0000000</li>
-                    <li class="list-group-item"><span>부가세</span>
-                        <select>
-                            <option value="">별도</option>
-                            <option value="">청구</option>
-                        </select>
-                        <span> :</span>000000</li>
-                    <li class="list-group-item"><span>합계 금액 : </span> 000000</li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <ul class="list-group text-left">
-                    <li class="list-group-item"><span>입금액 :</span>
-                        <input type="number">
-                        <select>
-                            <option value="cash">현금</option>
-                            <option value="bank">은행</option>
-                            <option value="bill">어음</option>
-                            <option value="card">카드</option>
-                            <option value="etc">기타</option>
-                        </select>
-                    </li>
-                    <li class="list-group-item"><span>할인액 : </span>
-                        <input type="number">
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <ul class="list-group text-left">
-                    <li class="list-group-item"><span>전일잔액 :</span>000000</li>
-                    <li class="list-group-item"><span>금일잔액 :</span>000000</li>
-                </ul>
+            <div class="col-md-3 pull-left" style="border: 1px solid red">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="거래처 검색">
+                    </div>
+                    <button type="submit" class="btn btn-default">검색</button>
+                </form>
             </div>
         </div>
-    </div>
-    <!-- /.container -->
-    <!-- Bootstrap core JavaScript
+            <!-- /.col-lg-6 -->
+            <table class="table table-bordered">
+                <tr bgcolor="#dedddd">
+                    <td>No.</td>
+                    <td>제품(명)</td>
+                    <td>규 격</td>
+                    <td>단 위</td>
+                    <td>수 량</td>
+                    <td>단 가</td>
+                    <td>금 액</td>
+                    <td>비 고</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <input type="text" size="30" id="InputProductNo">
+                    </td>
+                    <td>
+                        <input type="text" size="10">
+                    </td>
+                    <td>
+                        <input type="text" size="10">
+                    </td>
+                    <td>
+                        <input type="text" size="8">
+                    </td>
+                    <td>
+                        <input type="text" size="10">
+                    </td>
+                    <td>
+                        <input type="text" size="10">
+                    </td>
+                    <td>
+                        <input type="text" size="10">
+                    </td>
+                </tr>
+                <!-- 이 밑은 angular js를 이용하여 데이터가 있는 만큼 출력 -->
+            </table>
+            <nav>
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="list-group text-left">
+                        <li class="list-group-item"><span>공급가액 :</span>0000000</li>
+                        <li class="list-group-item"><span>부가세</span>
+                            <select>
+                                <option value="">별도</option>
+                                <option value="">청구</option>
+                            </select>
+                            <span> :</span>000000</li>
+                        <li class="list-group-item"><span>합계 금액 : </span> 000000</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-group text-left">
+                        <li class="list-group-item"><span>입금액 :</span>
+                            <input type="number">
+                            <select>
+                                <option value="cash">현금</option>
+                                <option value="bank">은행</option>
+                                <option value="bill">어음</option>
+                                <option value="card">카드</option>
+                                <option value="etc">기타</option>
+                            </select>
+                        </li>
+                        <li class="list-group-item"><span>할인액 : </span>
+                            <input type="number">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-group text-left">
+                        <li class="list-group-item"><span>전일잔액 :</span>000000</li>
+                        <li class="list-group-item"><span>금일잔액 :</span>000000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+        <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
