@@ -18,7 +18,7 @@
     <link href="css/woowon.css" rel="stylesheet">
 </head>
 
-<body>
+<body ng-app="myApp">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -55,7 +55,7 @@
             </div>
         </div>
     </nav>
-    <div class="container starter-template well">
+    <div class="container starter-template well" ng-controller="ProductController">
         <h2>제품 관리</h2>
         <p class="text-right"><a href="Product_add.html"><u>제품 등록</u></a></p>
         <table class="table table-bordered">
@@ -68,14 +68,14 @@
                 <td>가격</td>
                 <td>등록날짜</td>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
+            <tr ng-repeat="product in products">
+                <td>{{product.P_no}}</td>
+                <td>{{product.P_name}}</td>
+                <td>{{product.P_group}}</td>
+                <td>{{product.P_stand}}</td>
+                <td>{{product.P_unit}}</td>
+                <td>{{product.P_price}}</td>
+                <td>{{product.P_date}}</td>
             </tr>
             <!-- 이 밑은 angular js를 이용하여 데이터가 있는 만큼 출력 -->
         </table>
@@ -106,6 +106,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/controllers.js"></script>
 </body>
 
 </html>

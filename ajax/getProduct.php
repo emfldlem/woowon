@@ -2,7 +2,7 @@
 require_once '../includes/db.php'; // The mysql database connection script
 //mysql_query("set names utf8");
 
-$query="select C_no, C_name, C_number,C_repre,C_tel,C_Group,C_date from customer";
+$query="select P_no, P_name, P_stand,P_unit,P_price,P_group,P_date from products";
 $result = $mysqli->query($query) or die($mysqli->error.__LINE__);
 //$result = mysql_query($query);
 
