@@ -19,6 +19,7 @@
 </head>
 
 <body ng-app="myApp">
+    <div ng-include src="'nav_menu.html'"></div>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -67,15 +68,17 @@
                 <td>대표번호</td>
                 <td>사업자NO</td>
                 <td>등록날짜</td>
+                <td></td>
             </tr>
             <tr ng-repeat="customer in customers">
-                <td>{{customer.C_no}}</td>
-                <td>{{customer.C_name}}</td>
-                <td>{{customer.C_repre}}</td>
-                <td>{{customer.C_Group}}</td>
-                <td>{{customer.C_tel}}</td>
-                <td>{{customer.C_number}}</td>
-                <td>{{customer.C_date}}</td>
+                <td class="col-sm-1">{{customer.C_no}}</td>
+                <td class="col-sm-2">{{customer.C_name}}</td>
+                <td class="col-sm-1">{{customer.C_repre}}</td>
+                <td class="col-sm-1">{{customer.C_Group}}</td>
+                <td class="col-sm-2">{{customer.C_tel}}</td>
+                <td class="col-sm-2">{{customer.C_number}}</td>
+                <td class="col-sm-2">{{customer.C_date | date:"yyyy년 MM월 dd일"}}</td>
+                <td><button type="button" class="btn btn-sm btn-success">수정</button></td>
             </tr>
 
             <!-- 이 밑은 angular js를 이용하여 데이터가 있는 만큼 출력 -->

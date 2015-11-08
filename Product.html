@@ -16,9 +16,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     <!-- Custom styles for this template -->
     <link href="css/woowon.css" rel="stylesheet">
+
 </head>
 
 <body ng-app="myApp">
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -67,6 +69,7 @@
                 <td>단위</td>
                 <td>가격</td>
                 <td>등록날짜</td>
+                <td></td>
             </tr>
             <tr ng-repeat="product in products">
                 <td>{{product.P_no}}</td>
@@ -76,6 +79,7 @@
                 <td>{{product.P_unit}}</td>
                 <td>{{product.P_price}}</td>
                 <td>{{product.P_date}}</td>
+                <td><button type="button" class="btn btn-sm btn-success">수정</button></td>
             </tr>
             <!-- 이 밑은 angular js를 이용하여 데이터가 있는 만큼 출력 -->
         </table>
@@ -108,6 +112,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controllers/controllers.js"></script>
+
 </body>
 
 </html>

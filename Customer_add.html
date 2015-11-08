@@ -26,11 +26,11 @@
                 <div class="page-header">
                     <h1>거래처 등록 <small>WooWon 판매재고</small></h1>
                 </div>
-                <form class="form-horizontal">
+                <form action="Customer_post.php" class="form-horizontal" method="get">
                     <div class="form-group">
                         <label for="InputCustomerName" class="col-sm-2 control-label">거래처 명</label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" id="InputCustomerName" placeholder="거래처명">
+                            <input type="text" class="form-control" id="InputCustomerName" name="InputCustomerName" placeholder="거래처명">
                         </div>
                     </div>
                     <div class="form-group">
@@ -54,7 +54,7 @@
                     <div class="form-group">
                         <label for="InputCustomerphone" class="col-sm-2 control-label">휴대폰번호</label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" id="inputNumber" placeholder="휴대폰번호">
+                            <input type="text" class="form-control" id="inputCustomerphone" placeholder="휴대폰번호">
                             <p class="help-block">- 없이 적어주세요.</p>
                         </div>
                     </div>

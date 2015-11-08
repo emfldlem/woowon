@@ -60,16 +60,31 @@
     <!--/.nav-collapse -->
     <div class="container starter-template well">
             <h2>매입 관리</h2>
-            <div class="row">
-            <div class="col-md-3 pull-left" style="border: 1px solid red">
-                <form class="navbar-form navbar-left" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="거래처 검색">
-                    </div>
-                    <button type="submit" class="btn btn-default">검색</button>
-                </form>
+                    <form class="form-inline">
+            <div class="col-md-3 pull-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="거래처 검색">
+                </div>
+                <button type="submit" class="btn btn-default">검색</button>
             </div>
-        </div>
+             <div class="col-md-2 pull-left">
+                <div class="form-group">
+                    <input type="date" class="form-control" id="">
+                </div> 
+            </div>
+             <div class="col-md-1 pull-right">
+                <div class="form-group">
+                    <select class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                </div> 
+            </div>
+        </form>
+
             <table class="table table-bordered">
                 <tr bgcolor="#dedddd">
                     <td>No.</td>
@@ -108,25 +123,7 @@
                 </tr>
                 <!-- 이 밑은 angular js를 이용하여 데이터가 있는 만큼 출력 -->
             </table>
-            <nav>
-                <ul class="pagination">
-                    <li>
-                        <a href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li>
-                        <a href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            
             <div class="row">
                 <div class="col-md-3">
                     <ul class="list-group text-left">
